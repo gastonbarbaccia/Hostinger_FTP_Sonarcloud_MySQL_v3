@@ -169,6 +169,6 @@ jobs:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        remoteFiles: "script.sql"
+        remoteFiles: ${{ secrets.DATABASE_SCRIPT }}
         workingDir: "."
         ignoreSSL: "1"
